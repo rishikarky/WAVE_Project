@@ -132,7 +132,8 @@
             <div style="border-top: 1px solid #eee; padding: 20px 0;">
                 <p style="color: var(--muted);">Your bag is currently empty.</p>
                 <p>Express Checkout:</p>
-                <input type="text" placeholder="Gift Card or Promo Code">
+                <label for="promo">Promo Code</label>
+                <input type="text" id="promo" placeholder="Gift Card or Promo Code">
             </div>
             <button class="btn-black" onclick="cls()">Proceed to Secure Pay</button>
         </div>
@@ -145,8 +146,8 @@
             <div style="margin: 20px 0;">
                 <label for="usr-h">Your Height (cm)</label>
                 <input type="text" id="usr-h" placeholder="180">
-                <label for="usr-h">Your Weight (kg)</label>
-                <input type="text" id="usr-h" placeholder="75">
+                <label for="usr-w">Your Weight (kg)</label>
+                <input type="text" id="usr-w" placeholder="75">
             </div>
             <button class="btn-black" onclick="cls()">Calculate My Fit</button>
         </div>
@@ -157,7 +158,8 @@
             <span class="close-trigger" onclick="cls()">✕</span>
             <h3>Client Login</h3>
             <div style="margin-bottom: 1rem;">
-                <input type="checkbox" style="width: auto;">
+                <label for="checkbox"></label>
+                <input type="checkbox" id="checkbox" style="width: auto;">
                 <span>Remember this device</span>
             </div>
             <p style="color: var(--accent); font-size: 0.8rem; text-align: center;">Identity Server Status: Ready</p>
