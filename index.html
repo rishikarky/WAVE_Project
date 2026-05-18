@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Vogue & Valor | Premium Apparel</title>
     <style>
         :root {
-            --accent: #c5a059;
-            --muted: #a1a1aa;
+            --accent: #8b7c3e;
+            --muted: #4a4a4a;
             --bg: #ffffff;
         }
         
@@ -30,18 +30,18 @@
         .hero { height: 70vh; background: #fdfcf7; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 10%; }
         
         .hero h3 { font-size: 3rem; margin-bottom: 10px; font-weight: 300; }
-        .hero p { color: var(--muted); max-width: 600px; margin-bottom: 30px; }
+        .hero p { color: #555555; max-width: 600px; margin-bottom: 30px; }
 
-        .section-title { text-align: center; padding: 60px 0 20px; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); }
+        .section-title { text-align: center; padding: 60px 0 20px; text-transform: uppercase; letter-spacing: 2px; color: #6b5c2f; }
 
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; padding: 0 5%; margin-bottom: 80px; }
         .product-card { position: relative; cursor: pointer; }
         .product-card img { width: 100%; height: 400px; object-fit: cover; transition: 0.5s; }
         
         .product-info { padding: 15px 0; }
-        .price { color: var(--accent); font-weight: bold; }
+        .price { color: #d4af37; font-weight: bold; }
 
-        .footer { background: #18181b; color: #71717a; padding: 80px 5%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; font-size: 0.9rem; }
+        .footer { background: #18181b; color: #b0b0b0; padding: 80px 5%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; font-size: 0.9rem; }
         .footer h5 { color: #fff; margin-bottom: 20px; }
         
         
@@ -54,13 +54,13 @@
         input, select { width: 100%; padding: 12px; border: 1px solid #e4e4e7; margin-top: 8px; box-sizing: border-box; }
 
         
-        .ghost-coupon { opacity: 0; padding: 10px; border: 1px dashed var(--accent); margin-top: 20px; transition: opacity 0.3s; }
+        .ghost-coupon { opacity: 0; padding: 10px; border: 1px dashed #d4af37; margin-top: 20px; transition: opacity 0.3s; }
         .ghost-coupon:focus-within { opacity: 1; }
     </style>
 </head>
 <body>
 
-    <a href="#main-inventory" class="skip-link">Skip to Inventory</a>
+    <a href="#catalog" class="skip-link">Skip to Inventory</a>
 
     <header>
         <div class="logo" onclick="location.reload()">VOGUE & VALOR</div>
@@ -98,7 +98,7 @@
         </div>
         <div class="product-card">
             <button style="width:100%; height:400px; background:#f9f9f9; border:none; cursor:pointer;">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#a1a1aa"><path d="M12 5v14M5 12h14"/></svg>
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#555555"><path d="M12 5v14M5 12h14"/></svg>
             </button>
             <div class="product-info">
                 <span>Request Custom Order</span>
@@ -113,14 +113,14 @@
         </div>
         <div>
             <h5>Support</h5>
-            <p>For return policies, <a href="#" style="color: var(--accent);">click here</a>.</p>
-            <p>For shipping updates, <a href="#" style="color: var(--accent);">read more</a>.</p>
+            <p>For return policies, <a href="#" style="color: #d4af37;">click here</a>.</p>
+            <p>For shipping updates, <a href="#" style="color: #d4af37;">read more</a>.</p>
         </div>
         <div>
             <h5>Newsletter</h5>
             <div class="ghost-coupon">
-                <p style="color: var(--accent); margin: 0;">SECRET_CODE: VOGUE2026</p>
-                <button style="font-size: 0.6rem; padding: 5px;">Copy</button>
+                <p style="color: #d4af37; margin: 0;">SECRET_CODE: VOGUE2026</p>
+                <button style="font-size: 0.6rem; padding: 5px;" aria-label="Copy promo code">Copy</button>
             </div>
         </div>
     </footer>
@@ -130,7 +130,7 @@
             <span class="close-trigger" onclick="cls()">✕</span>
             <h3>Your Selection</h3>
             <div style="border-top: 1px solid #eee; padding: 20px 0;">
-                <p style="color: var(--muted);">Your bag is currently empty.</p>
+                <p style="color: #555555;">Your bag is currently empty.</p>
                 <p>Express Checkout:</p>
                 <input type="text" placeholder="Gift Card or Promo Code">
             </div>
@@ -160,7 +160,7 @@
                 <input type="checkbox" style="width: auto;">
                 <span>Remember this device</span>
             </div>
-            <p style="color: var(--accent); font-size: 0.8rem; text-align: center;">Identity Server Status: Ready</p>
+            <p style="color: #d4af37; font-size: 0.8rem; text-align: center;">Identity Server Status: Ready</p>
             <button class="btn-black" onclick="cls()">Sign In</button>
         </div>
     </div>
